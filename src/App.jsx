@@ -1,3 +1,12 @@
+import { Provider } from 'react-redux'
+import { store } from "./store.js";
+import { TaskList } from './Components/TaskList.jsx';
+import { StartPage } from './Components/StartPage.jsx';
+
 export const App = () => {
-  return <div>Find me in App.jsx!</div>;
+  return (
+  <Provider store={store}>
+  <StartPage />
+   </Provider>
+   )
 };
