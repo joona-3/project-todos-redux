@@ -12,3 +12,81 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.container {
+  padding: 0 16px 16px 16px;
+}
+
+.tasklist-container {
+  max-width: 500px;
+  margin: 20px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.tasklist-count-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.task-container {
+  background-color: white;
+  border: solid 2px #0B2944;
+  padding: 20px 40px;
+  border-radius: 4px;
+}
+
+.task-container p:first-child {
+  font-weight: 600;
+}
+
+.add-task-container {
+  max-width: 500px;
+  margin: 40px auto 0 auto;
+  background-color: white;
+  border: solid 2px #0B2944;
+  padding: 20px 40px;
+  border-radius: 4px;
+}
+
+.add-task-form {
+  display: flex; 
+  flex-direction: column;
+  gap: 6px;
+}
+.add-task-form input{
+  border-radius: 4px;
+  padding: 8px 8px;
+  color: #0B2944;
+  border: solid 1px #0B2944;
+  }
+.add-task-form button{
+  background-color:  #DDFFBB;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 0;
+  font-weight: 600;
+  color: #0B2944;
+  }
+
+  .complete-button{
+    background-color:  transparent;
+    border: solid 1px #0B2944;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-weight: 600;
+    color: #0B2944;
+    margin-right: 8px;
+    }
+
+  .remove-button {
+  background-color:  #FFBBBB;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-weight: 600;
+  color: #0B2944;
+  }
+
+  

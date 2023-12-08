@@ -1,10 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = [
-  { id: 1, text: 'Watch video on actions & reducers', isCompleted: true },
-  { id: 2, text: 'Follow redux codealong', isCompleted: true },
-  { id: 3, text: 'Fork weekly assignment', isCompleted: true },
-  { id: 4, text: 'Create a todo app', isCompleted: false },
+  { id: 1, text: "Finishing up Technigo's JavaScript & React course ", isCompleted: false },
 ];
 
 export const tasks = createSlice({

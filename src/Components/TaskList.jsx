@@ -8,18 +8,20 @@ export const TaskList = () => {
   const dispatch = useDispatch();
 
   return (
-    <div>
-    <p>Total Tasks: {count}</p>
-      <p>Uncompleted Tasks: {uncompletedCount}</p>
+    <div className="tasklist-container">
+      <div className="tasklist-count-wrapper">
+        <p>Total Tasks: {count}</p>
+        <p>Uncompleted Tasks: {uncompletedCount}</p>
+      </div>
         {console.log(taskList)}
       {taskList.map((task) => (
-        <div key={task.id}>
+        <div className="task-container" key={task.id}>
           <p>{task.text}</p>
           <p>{task.isCompleted ? 'Completed' : 'Not Completed'}</p>
-          <button onClick={() => dispatch(completeTask(task.id))}>
+          <button className="complete-button"onClick={() => dispatch(completeTask(task.id))}>
             {task.isCompleted ? 'Mark as Not Completed' : 'Mark as Completed'}
           </button>
-          <button onClick={() => dispatch(removeTask(task.id))}>Remove Task</button>
+          <button className="remove-button"onClick={() => dispatch(removeTask(task.id))}>Remove Task</button>
         </div>
       ))}
     </div>

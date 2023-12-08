@@ -5,8 +5,10 @@ import { Task } from './Task'
 export const StartPage = () => {
   return (
     <>
+    <section className="container">
+      <Task />
     <TaskList />
-    <Task />
+    </section>
     </>
   )
 }
